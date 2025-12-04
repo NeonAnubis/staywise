@@ -1,0 +1,256 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Enum definitions
+enum UserRole {
+  SUPER_ADMIN
+  HOTEL_ADMIN
+  MANAGER
+  RECEPTIONIST
+  STAFF
+}
+
+enum RoomStatus {
+  AVAILABLE
+  OCCUPIED
+  MAINTENANCE
+  CLEANING
+  RESERVED
+}
+
+enum ReservationStatus {
+  PENDING
+  CONFIRMED
+  CHECKED_IN
+  CHECKED_OUT
+  CANCELLED
+  NO_SHOW
+}
+
+enum PaymentStatus {
+  PENDING
+  PARTIAL
+  PAID
+  REFUNDED
+  CANCELLED
+}
+
+enum PaymentMethod {
+  CASH
+  CREDIT_CARD
+  DEBIT_CARD
+  BANK_TRANSFER
+  PIX
+}
+
+// Hotel Chain and Hotels
+model Hotel {
+  id          String   @id @default(cuid())
+  name        String
+  code        String   @unique
+  address     String
+  city        String
+  state       String
+  country     String   @default("Brazil")
+  zipCode     String
+  phone       String
+  email       String
+  description String?
+  imageUrl    String?
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  rooms        Room[]
+  users        User[]
+  reservations Reservation[]
+  transactions Transaction[]
+  reports      Report[]
+  roomTypes    RoomType[]
+}
+
+// User Management
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  password      String
+  firstName     String
+  lastName      String
+  phone         String?
+  role          UserRole  @default(STAFF)
+  isActive      Boolean   @default(true)
+  lastLogin     DateTime?
+  hotelId       String?
+  hotel         Hotel?    @relation(fields: [hotelId], references: [id])
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  reservations  Reservation[]
+  transactions  Transaction[]
+  auditLogs     AuditLog[]
+}
+
+// Room Types
+model RoomType {
+  id           String   @id @default(cuid())
+  name         String
+  description  String?
+  baseRate     Float
+  maxOccupancy Int
+  amenities    String[] @default([])
+  hotelId      String
+  hotel        Hotel    @relation(fields: [hotelId], references: [id])
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  rooms Room[]
+}
+
+// Room Management
+model Room {
+  id           String     @id @default(cuid())
+  number       String
+  floor        Int
+  status       RoomStatus @default(AVAILABLE)
+  notes        String?
+  roomTypeId   String
+  roomType     RoomType   @relation(fields: [roomTypeId], references: [id])
+  hotelId      String
+  hotel        Hotel      @relation(fields: [hotelId], references: [id])
+  isActive     Boolean    @default(true)
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+
+  reservations ReservationRoom[]
+
+  @@unique([hotelId, number])
+}
+
+// Guest Management
+model Guest {
+  id           String   @id @default(cuid())
+  firstName    String
+  lastName     String
+  email        String?
+  phone        String
+  document     String   @unique
+  documentType String   @default("CPF")
+  nationality  String   @default("Brazilian")
+  address      String?
+  city         String?
+  state        String?
+  country      String?
+  birthDate    DateTime?
+  notes        String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  reservations Reservation[]
+}
+
+// Reservation Management
+model Reservation {
+  id              String            @id @default(cuid())
+  code            String            @unique
+  checkInDate     DateTime
+  checkOutDate    DateTime
+  actualCheckIn   DateTime?
+  actualCheckOut  DateTime?
+  adults          Int               @default(1)
+  children        Int               @default(0)
+  status          ReservationStatus @default(PENDING)
+  totalAmount     Float
+  paidAmount      Float             @default(0)
+  notes           String?
+  specialRequests String?
+  guestId         String
+  guest           Guest             @relation(fields: [guestId], references: [id])
+  hotelId         String
+  hotel           Hotel             @relation(fields: [hotelId], references: [id])
+  createdById     String
+  createdBy       User              @relation(fields: [createdById], references: [id])
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+
+  rooms        ReservationRoom[]
+  transactions Transaction[]
+  charges      Charge[]
+}
+
+// Junction table for Reservation-Room relationship
+model ReservationRoom {
+  id            String      @id @default(cuid())
+  reservationId String
+  reservation   Reservation @relation(fields: [reservationId], references: [id])
+  roomId        String
+  room          Room        @relation(fields: [roomId], references: [id])
+  dailyRate     Float
+  createdAt     DateTime    @default(now())
+
+  @@unique([reservationId, roomId])
+}
+
+// Additional Charges
+model Charge {
+  id            String      @id @default(cuid())
+  description   String
+  amount        Float
+  quantity      Int         @default(1)
+  category      String      @default("OTHER")
+  reservationId String
+  reservation   Reservation @relation(fields: [reservationId], references: [id])
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+}
+
+// Financial Transactions
+model Transaction {
+  id            String        @id @default(cuid())
+  amount        Float
+  type          String        // PAYMENT, REFUND, ADJUSTMENT
+  paymentMethod PaymentMethod @default(CASH)
+  paymentStatus PaymentStatus @default(PENDING)
+  reference     String?
+  description   String?
+  reservationId String?
+  reservation   Reservation?  @relation(fields: [reservationId], references: [id])
+  hotelId       String
+  hotel         Hotel         @relation(fields: [hotelId], references: [id])
+  processedById String
+  processedBy   User          @relation(fields: [processedById], references: [id])
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+}
+
+// Reports
+model Report {
+  id        String   @id @default(cuid())
+  type      String   // DAILY, WEEKLY, MONTHLY, CUSTOM
+  startDate DateTime
+  endDate   DateTime
+  data      Json
+  hotelId   String?
+  hotel     Hotel?   @relation(fields: [hotelId], references: [id])
+  createdAt DateTime @default(now())
+}
+
+// Audit Log
+model AuditLog {
+  id         String   @id @default(cuid())
+  action     String
+  entity     String
+  entityId   String
+  oldData    Json?
+  newData    Json?
+  userId     String
+  user       User     @relation(fields: [userId], references: [id])
+  ipAddress  String?
+  userAgent  String?
+  createdAt  DateTime @default(now())
+}

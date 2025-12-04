@@ -1,0 +1,409 @@
+{
+  "common": {
+    "appName": "Staywise",
+    "tagline": "Sistema Moderno de Gestão Hoteleira",
+    "loading": "Carregando...",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "delete": "Excluir",
+    "edit": "Editar",
+    "create": "Criar",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "export": "Exportar",
+    "import": "Importar",
+    "actions": "Ações",
+    "status": "Status",
+    "details": "Detalhes",
+    "view": "Visualizar",
+    "back": "Voltar",
+    "next": "Próximo",
+    "previous": "Anterior",
+    "confirm": "Confirmar",
+    "yes": "Sim",
+    "no": "Não",
+    "all": "Todos",
+    "none": "Nenhum",
+    "total": "Total",
+    "subtotal": "Subtotal",
+    "selectHotel": "Selecionar Hotel",
+    "noResults": "Nenhum resultado encontrado",
+    "success": "Sucesso",
+    "error": "Erro",
+    "warning": "Aviso",
+    "info": "Informação"
+  },
+  "nav": {
+    "home": "Início",
+    "dashboard": "Painel",
+    "rooms": "Quartos",
+    "reservations": "Reservas",
+    "guests": "Hóspedes",
+    "reports": "Relatórios",
+    "financial": "Financeiro",
+    "settings": "Configurações",
+    "users": "Usuários",
+    "hotels": "Hotéis",
+    "logout": "Sair",
+    "profile": "Perfil"
+  },
+  "auth": {
+    "signIn": "Entrar",
+    "signUp": "Cadastrar",
+    "signOut": "Sair",
+    "email": "E-mail",
+    "password": "Senha",
+    "confirmPassword": "Confirmar Senha",
+    "firstName": "Nome",
+    "lastName": "Sobrenome",
+    "phone": "Telefone",
+    "forgotPassword": "Esqueceu a senha?",
+    "rememberMe": "Lembrar de mim",
+    "noAccount": "Não tem uma conta?",
+    "hasAccount": "Já tem uma conta?",
+    "createAccount": "Criar Conta",
+    "welcomeBack": "Bem-vindo de volta",
+    "signInDescription": "Digite suas credenciais para acessar sua conta",
+    "signUpDescription": "Crie uma conta para começar",
+    "invalidCredentials": "E-mail ou senha inválidos",
+    "passwordMismatch": "As senhas não coincidem",
+    "emailRequired": "E-mail é obrigatório",
+    "passwordRequired": "Senha é obrigatória",
+    "registrationSuccess": "Conta criada com sucesso",
+    "loginSuccess": "Login realizado com sucesso"
+  },
+  "landing": {
+    "hero": {
+      "title": "Transforme as Operações do Seu Hotel",
+      "subtitle": "A plataforma completa para gerenciar sua rede hoteleira com elegância e eficiência",
+      "cta": "Começar Agora",
+      "learnMore": "Saiba Mais"
+    },
+    "features": {
+      "title": "Recursos Poderosos",
+      "subtitle": "Tudo que você precisa para administrar sua rede hoteleira com eficiência",
+      "roomManagement": {
+        "title": "Gestão de Quartos",
+        "description": "Acompanhamento em tempo real do status dos quartos, gerenciamento de tipos e controle de preços em todas as propriedades"
+      },
+      "reservations": {
+        "title": "Sistema de Reservas",
+        "description": "Processo de reserva simplificado com check-in/check-out rápido e gestão de hóspedes"
+      },
+      "dashboard": {
+        "title": "Painéis Operacionais",
+        "description": "Painéis individuais por hotel e análises de toda a rede para visibilidade completa"
+      },
+      "accessControl": {
+        "title": "Controle de Acesso",
+        "description": "Permissões baseadas em funções garantindo que equipes acessem apenas informações relevantes"
+      },
+      "reports": {
+        "title": "Relatórios Completos",
+        "description": "Taxas de ocupação, análise de receita e extratos detalhados de reservas"
+      },
+      "financial": {
+        "title": "Controle Financeiro",
+        "description": "Faturamento integrado, rastreamento de pagamentos e relatórios financeiros"
+      }
+    },
+    "workflow": {
+      "title": "Fluxo de Trabalho Simples",
+      "subtitle": "Comece em minutos",
+      "step1": {
+        "title": "Configure os Hotéis",
+        "description": "Configure suas propriedades hoteleiras com quartos, tipos e tarifas"
+      },
+      "step2": {
+        "title": "Gerencie Reservas",
+        "description": "Crie e acompanhe reservas com uma interface intuitiva"
+      },
+      "step3": {
+        "title": "Monitore o Desempenho",
+        "description": "Acompanhe ocupação, receita e gere relatórios detalhados"
+      }
+    },
+    "stats": {
+      "title": "Confiado por Hotéis no Mundo Todo",
+      "hotels": "Hotéis Gerenciados",
+      "reservations": "Reservas Processadas",
+      "guests": "Hóspedes Satisfeitos",
+      "revenue": "Receita Gerada"
+    },
+    "cta": {
+      "title": "Pronto para Transformar Suas Operações?",
+      "subtitle": "Junte-se a milhares de hotéis que já usam o Staywise",
+      "button": "Iniciar Teste Grátis"
+    }
+  },
+  "dashboard": {
+    "title": "Painel",
+    "welcome": "Bem-vindo de volta",
+    "overview": "Visão Geral",
+    "occupancyRate": "Taxa de Ocupação",
+    "todayCheckIns": "Check-ins de Hoje",
+    "todayCheckOuts": "Check-outs de Hoje",
+    "pendingReservations": "Reservas Pendentes",
+    "totalRevenue": "Receita Total",
+    "monthlyRevenue": "Receita Mensal",
+    "availableRooms": "Quartos Disponíveis",
+    "occupiedRooms": "Quartos Ocupados",
+    "recentReservations": "Reservas Recentes",
+    "roomStatus": "Status dos Quartos",
+    "quickActions": "Ações Rápidas",
+    "newReservation": "Nova Reserva",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "hotelComparison": "Comparação entre Hotéis",
+    "chainOverview": "Visão Geral da Rede"
+  },
+  "rooms": {
+    "title": "Gestão de Quartos",
+    "pageDescription": "Gerencie os quartos e tipos de quartos do seu hotel",
+    "roomList": "Quartos",
+    "room": "Quarto",
+    "addRoom": "Adicionar Quarto",
+    "editRoom": "Editar Quarto",
+    "addRoomDescription": "Adicionar um novo quarto ao sistema",
+    "editRoomDescription": "Atualizar informações do quarto",
+    "roomNumber": "Número do Quarto",
+    "roomType": "Tipo de Quarto",
+    "hotel": "Hotel",
+    "floor": "Andar",
+    "status": "Status",
+    "dailyRate": "Diária",
+    "capacity": "Capacidade",
+    "amenities": "Comodidades",
+    "notes": "Observações",
+    "guests": "hóspedes",
+    "selectHotel": "Selecionar hotel",
+    "selectRoomType": "Selecionar tipo de quarto",
+    "selectHotelFirst": "Selecione um hotel primeiro",
+    "searchPlaceholder": "Buscar quartos...",
+    "filterByStatus": "Filtrar por status",
+    "notesPlaceholder": "Observações adicionais...",
+    "noRoomsFound": "Nenhum quarto encontrado com os critérios informados",
+    "statuses": {
+      "available": "Disponível",
+      "occupied": "Ocupado",
+      "maintenance": "Manutenção",
+      "cleaning": "Limpeza",
+      "reserved": "Reservado"
+    },
+    "types": {
+      "title": "Tipos de Quarto",
+      "addType": "Adicionar Tipo",
+      "editType": "Editar Tipo",
+      "addTypeDescription": "Criar um novo tipo de quarto para o hotel",
+      "editTypeDescription": "Atualizar informações do tipo de quarto",
+      "name": "Nome do Tipo",
+      "namePlaceholder": "ex: Duplo Standard",
+      "baseRate": "Tarifa Base",
+      "maxOccupancy": "Ocupação Máxima",
+      "description": "Descrição",
+      "descriptionPlaceholder": "Descrição do tipo de quarto...",
+      "roomCount": "Quartos",
+      "tableDescription": "Gerencie os tipos de quarto e seus preços",
+      "noTypes": "Nenhum tipo de quarto encontrado. Adicione um para começar.",
+      "createSuccess": "Tipo de quarto criado com sucesso",
+      "updateSuccess": "Tipo de quarto atualizado com sucesso",
+      "deleteSuccess": "Tipo de quarto excluído com sucesso",
+      "saveError": "Falha ao salvar tipo de quarto",
+      "deleteError": "Falha ao excluir tipo de quarto",
+      "deleteConfirm": "Tem certeza que deseja excluir este tipo de quarto?"
+    }
+  },
+  "reservations": {
+    "title": "Reservas",
+    "list": "Lista de Reservas",
+    "new": "Nova Reserva",
+    "edit": "Editar Reserva",
+    "code": "Código da Reserva",
+    "guest": "Hóspede",
+    "room": "Quarto",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "nights": "Noites",
+    "adults": "Adultos",
+    "children": "Crianças",
+    "totalAmount": "Valor Total",
+    "paidAmount": "Valor Pago",
+    "balance": "Saldo",
+    "specialRequests": "Solicitações Especiais",
+    "statuses": {
+      "pending": "Pendente",
+      "confirmed": "Confirmada",
+      "checkedIn": "Check-in Realizado",
+      "checkedOut": "Check-out Realizado",
+      "cancelled": "Cancelada",
+      "noShow": "Não Compareceu"
+    },
+    "actions": {
+      "confirm": "Confirmar Reserva",
+      "checkIn": "Realizar Check-in",
+      "checkOut": "Realizar Check-out",
+      "cancel": "Cancelar Reserva",
+      "addCharge": "Adicionar Cobrança",
+      "addPayment": "Adicionar Pagamento"
+    },
+    "selectGuest": "Por favor, selecione um hóspede",
+    "selectRoom": "Por favor, selecione pelo menos um quarto",
+    "selectDates": "Por favor, selecione as datas de check-in e check-out"
+  },
+  "guests": {
+    "title": "Hóspedes",
+    "list": "Lista de Hóspedes",
+    "add": "Adicionar Hóspede",
+    "edit": "Editar Hóspede",
+    "firstName": "Nome",
+    "lastName": "Sobrenome",
+    "email": "E-mail",
+    "phone": "Telefone",
+    "document": "Documento",
+    "documentType": "Tipo de Documento",
+    "nationality": "Nacionalidade",
+    "address": "Endereço",
+    "city": "Cidade",
+    "state": "Estado",
+    "country": "País",
+    "birthDate": "Data de Nascimento",
+    "notes": "Observações",
+    "reservationHistory": "Histórico de Reservas"
+  },
+  "reports": {
+    "title": "Relatórios",
+    "generate": "Gerar Relatório",
+    "dateRange": "Período",
+    "startDate": "Data Inicial",
+    "endDate": "Data Final",
+    "types": {
+      "occupancy": "Relatório de Ocupação",
+      "revenue": "Relatório de Receita",
+      "reservations": "Relatório de Reservas",
+      "financial": "Relatório Financeiro"
+    },
+    "metrics": {
+      "totalReservations": "Total de Reservas",
+      "averageStay": "Estadia Média",
+      "occupancyRate": "Taxa de Ocupação",
+      "totalRevenue": "Receita Total",
+      "averageRate": "Diária Média",
+      "revpar": "RevPAR"
+    }
+  },
+  "financial": {
+    "title": "Financeiro",
+    "transactions": "Transações",
+    "addTransaction": "Adicionar Transação",
+    "amount": "Valor",
+    "type": "Tipo",
+    "paymentMethod": "Forma de Pagamento",
+    "reference": "Referência",
+    "description": "Descrição",
+    "types": {
+      "payment": "Pagamento",
+      "refund": "Reembolso",
+      "adjustment": "Ajuste"
+    },
+    "methods": {
+      "cash": "Dinheiro",
+      "creditCard": "Cartão de Crédito",
+      "debitCard": "Cartão de Débito",
+      "bankTransfer": "Transferência Bancária",
+      "pix": "PIX"
+    },
+    "status": {
+      "pending": "Pendente",
+      "partial": "Parcial",
+      "paid": "Pago",
+      "refunded": "Reembolsado",
+      "cancelled": "Cancelado"
+    }
+  },
+  "users": {
+    "title": "Usuários",
+    "list": "Lista de Usuários",
+    "add": "Adicionar Usuário",
+    "edit": "Editar Usuário",
+    "role": "Função",
+    "hotel": "Hotel",
+    "lastLogin": "Último Acesso",
+    "roles": {
+      "superAdmin": "Super Admin",
+      "hotelAdmin": "Admin do Hotel",
+      "manager": "Gerente",
+      "receptionist": "Recepcionista",
+      "staff": "Funcionário"
+    }
+  },
+  "hotels": {
+    "title": "Hotéis",
+    "list": "Lista de Hotéis",
+    "add": "Adicionar Hotel",
+    "edit": "Editar Hotel",
+    "name": "Nome do Hotel",
+    "code": "Código do Hotel",
+    "address": "Endereço",
+    "city": "Cidade",
+    "state": "Estado",
+    "country": "País",
+    "zipCode": "CEP",
+    "phone": "Telefone",
+    "email": "E-mail",
+    "description": "Descrição"
+  },
+  "settings": {
+    "title": "Configurações",
+    "general": "Geral",
+    "appearance": "Aparência",
+    "language": "Idioma",
+    "theme": "Tema",
+    "darkMode": "Modo Escuro",
+    "lightMode": "Modo Claro",
+    "system": "Sistema"
+  },
+  "profile": {
+    "title": "Perfil",
+    "subtitle": "Gerencie suas informações pessoais e configurações da conta",
+    "personalInfo": "Informações Pessoais",
+    "personalInfoDesc": "Atualize seus dados pessoais e informações de contato",
+    "changePassword": "Alterar Senha",
+    "changePasswordDesc": "Atualize a senha da sua conta para maior segurança",
+    "accountInfo": "Informações da Conta",
+    "accountInfoDesc": "Detalhes e permissões da sua conta",
+    "currentPassword": "Senha Atual",
+    "newPassword": "Nova Senha",
+    "updatePassword": "Atualizar Senha",
+    "passwordRequirements": "A senha deve ter pelo menos 6 caracteres",
+    "passwordsMatch": "As senhas coincidem",
+    "currentPasswordRequired": "A senha atual é obrigatória",
+    "newPasswordRequired": "A nova senha é obrigatória",
+    "passwordMinLength": "A senha deve ter pelo menos 6 caracteres",
+    "updateSuccess": "Perfil atualizado com sucesso",
+    "updateError": "Falha ao atualizar perfil",
+    "passwordChangeSuccess": "Senha alterada com sucesso",
+    "passwordChangeError": "Falha ao alterar senha",
+    "emailCannotChange": "O e-mail não pode ser alterado",
+    "allHotels": "Todos os Hotéis (Super Admin)",
+    "memberSince": "Membro Desde",
+    "member": "Membro Ativo",
+    "active": "Ativo",
+    "accountId": "ID da Conta"
+  },
+  "errors": {
+    "generic": "Algo deu errado",
+    "notFound": "Não encontrado",
+    "unauthorized": "Não autorizado",
+    "forbidden": "Proibido",
+    "validation": "Erro de validação",
+    "network": "Erro de rede"
+  },
+  "validation": {
+    "required": "Este campo é obrigatório",
+    "email": "Por favor, insira um e-mail válido",
+    "minLength": "Deve ter pelo menos {min} caracteres",
+    "maxLength": "Deve ter no máximo {max} caracteres",
+    "positive": "Deve ser um número positivo",
+    "date": "Por favor, insira uma data válida"
+  }
+}

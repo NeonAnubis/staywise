@@ -1,0 +1,409 @@
+{
+  "common": {
+    "appName": "Staywise",
+    "tagline": "Modern Hotel Management System",
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "search": "Search",
+    "filter": "Filter",
+    "export": "Export",
+    "import": "Import",
+    "actions": "Actions",
+    "status": "Status",
+    "details": "Details",
+    "view": "View",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No",
+    "all": "All",
+    "none": "None",
+    "total": "Total",
+    "subtotal": "Subtotal",
+    "selectHotel": "Select Hotel",
+    "noResults": "No results found",
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning",
+    "info": "Information"
+  },
+  "nav": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "rooms": "Rooms",
+    "reservations": "Reservations",
+    "guests": "Guests",
+    "reports": "Reports",
+    "financial": "Financial",
+    "settings": "Settings",
+    "users": "Users",
+    "hotels": "Hotels",
+    "logout": "Logout",
+    "profile": "Profile"
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "signOut": "Sign Out",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "phone": "Phone",
+    "forgotPassword": "Forgot Password?",
+    "rememberMe": "Remember me",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "createAccount": "Create Account",
+    "welcomeBack": "Welcome back",
+    "signInDescription": "Enter your credentials to access your account",
+    "signUpDescription": "Create an account to get started",
+    "invalidCredentials": "Invalid email or password",
+    "passwordMismatch": "Passwords do not match",
+    "emailRequired": "Email is required",
+    "passwordRequired": "Password is required",
+    "registrationSuccess": "Account created successfully",
+    "loginSuccess": "Logged in successfully"
+  },
+  "landing": {
+    "hero": {
+      "title": "Transform Your Hotel Operations",
+      "subtitle": "The all-in-one platform to manage your hotel chain with elegance and efficiency",
+      "cta": "Get Started",
+      "learnMore": "Learn More"
+    },
+    "features": {
+      "title": "Powerful Features",
+      "subtitle": "Everything you need to run your hotel chain efficiently",
+      "roomManagement": {
+        "title": "Room Management",
+        "description": "Real-time room status tracking, type management, and pricing control across all properties"
+      },
+      "reservations": {
+        "title": "Reservation System",
+        "description": "Streamlined booking process with quick check-in/check-out and guest management"
+      },
+      "dashboard": {
+        "title": "Operational Dashboards",
+        "description": "Individual hotel dashboards and chain-wide analytics for complete visibility"
+      },
+      "accessControl": {
+        "title": "Access Control",
+        "description": "Role-based permissions ensuring teams access only relevant information"
+      },
+      "reports": {
+        "title": "Comprehensive Reports",
+        "description": "Occupancy rates, revenue analysis, and detailed reservation statements"
+      },
+      "financial": {
+        "title": "Financial Control",
+        "description": "Integrated billing, payment tracking, and financial reporting"
+      }
+    },
+    "workflow": {
+      "title": "Simple Workflow",
+      "subtitle": "Get up and running in minutes",
+      "step1": {
+        "title": "Set Up Hotels",
+        "description": "Configure your hotel properties with rooms, types, and rates"
+      },
+      "step2": {
+        "title": "Manage Reservations",
+        "description": "Create and track reservations with an intuitive interface"
+      },
+      "step3": {
+        "title": "Monitor Performance",
+        "description": "Track occupancy, revenue, and generate detailed reports"
+      }
+    },
+    "stats": {
+      "title": "Trusted by Hotels Worldwide",
+      "hotels": "Hotels Managed",
+      "reservations": "Reservations Processed",
+      "guests": "Happy Guests",
+      "revenue": "Revenue Generated"
+    },
+    "cta": {
+      "title": "Ready to Transform Your Operations?",
+      "subtitle": "Join thousands of hotels already using Staywise",
+      "button": "Start Free Trial"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome back",
+    "overview": "Overview",
+    "occupancyRate": "Occupancy Rate",
+    "todayCheckIns": "Today's Check-ins",
+    "todayCheckOuts": "Today's Check-outs",
+    "pendingReservations": "Pending Reservations",
+    "totalRevenue": "Total Revenue",
+    "monthlyRevenue": "Monthly Revenue",
+    "availableRooms": "Available Rooms",
+    "occupiedRooms": "Occupied Rooms",
+    "recentReservations": "Recent Reservations",
+    "roomStatus": "Room Status",
+    "quickActions": "Quick Actions",
+    "newReservation": "New Reservation",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "hotelComparison": "Hotel Comparison",
+    "chainOverview": "Chain Overview"
+  },
+  "rooms": {
+    "title": "Room Management",
+    "pageDescription": "Manage your hotel rooms and room types",
+    "roomList": "Rooms",
+    "room": "Room",
+    "addRoom": "Add Room",
+    "editRoom": "Edit Room",
+    "addRoomDescription": "Add a new room to the system",
+    "editRoomDescription": "Update room information",
+    "roomNumber": "Room Number",
+    "roomType": "Room Type",
+    "hotel": "Hotel",
+    "floor": "Floor",
+    "status": "Status",
+    "dailyRate": "Daily Rate",
+    "capacity": "Capacity",
+    "amenities": "Amenities",
+    "notes": "Notes",
+    "guests": "guests",
+    "selectHotel": "Select hotel",
+    "selectRoomType": "Select room type",
+    "selectHotelFirst": "Select a hotel first",
+    "searchPlaceholder": "Search rooms...",
+    "filterByStatus": "Filter by status",
+    "notesPlaceholder": "Additional notes...",
+    "noRoomsFound": "No rooms found matching your criteria",
+    "statuses": {
+      "available": "Available",
+      "occupied": "Occupied",
+      "maintenance": "Maintenance",
+      "cleaning": "Cleaning",
+      "reserved": "Reserved"
+    },
+    "types": {
+      "title": "Room Types",
+      "addType": "Add Room Type",
+      "editType": "Edit Room Type",
+      "addTypeDescription": "Create a new room type for the hotel",
+      "editTypeDescription": "Update room type information",
+      "name": "Type Name",
+      "namePlaceholder": "e.g., Standard Double",
+      "baseRate": "Base Rate",
+      "maxOccupancy": "Max Occupancy",
+      "description": "Description",
+      "descriptionPlaceholder": "Room type description...",
+      "roomCount": "Rooms",
+      "tableDescription": "Manage room types and their pricing",
+      "noTypes": "No room types found. Add one to get started.",
+      "createSuccess": "Room type created successfully",
+      "updateSuccess": "Room type updated successfully",
+      "deleteSuccess": "Room type deleted successfully",
+      "saveError": "Failed to save room type",
+      "deleteError": "Failed to delete room type",
+      "deleteConfirm": "Are you sure you want to delete this room type?"
+    }
+  },
+  "reservations": {
+    "title": "Reservations",
+    "list": "Reservation List",
+    "new": "New Reservation",
+    "edit": "Edit Reservation",
+    "code": "Reservation Code",
+    "guest": "Guest",
+    "room": "Room",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "nights": "Nights",
+    "adults": "Adults",
+    "children": "Children",
+    "totalAmount": "Total Amount",
+    "paidAmount": "Paid Amount",
+    "balance": "Balance",
+    "specialRequests": "Special Requests",
+    "statuses": {
+      "pending": "Pending",
+      "confirmed": "Confirmed",
+      "checkedIn": "Checked In",
+      "checkedOut": "Checked Out",
+      "cancelled": "Cancelled",
+      "noShow": "No Show"
+    },
+    "actions": {
+      "confirm": "Confirm Reservation",
+      "checkIn": "Process Check-in",
+      "checkOut": "Process Check-out",
+      "cancel": "Cancel Reservation",
+      "addCharge": "Add Charge",
+      "addPayment": "Add Payment"
+    },
+    "selectGuest": "Please select a guest",
+    "selectRoom": "Please select at least one room",
+    "selectDates": "Please select check-in and check-out dates"
+  },
+  "guests": {
+    "title": "Guests",
+    "list": "Guest List",
+    "add": "Add Guest",
+    "edit": "Edit Guest",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "phone": "Phone",
+    "document": "Document",
+    "documentType": "Document Type",
+    "nationality": "Nationality",
+    "address": "Address",
+    "city": "City",
+    "state": "State",
+    "country": "Country",
+    "birthDate": "Birth Date",
+    "notes": "Notes",
+    "reservationHistory": "Reservation History"
+  },
+  "reports": {
+    "title": "Reports",
+    "generate": "Generate Report",
+    "dateRange": "Date Range",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "types": {
+      "occupancy": "Occupancy Report",
+      "revenue": "Revenue Report",
+      "reservations": "Reservations Report",
+      "financial": "Financial Report"
+    },
+    "metrics": {
+      "totalReservations": "Total Reservations",
+      "averageStay": "Average Stay",
+      "occupancyRate": "Occupancy Rate",
+      "totalRevenue": "Total Revenue",
+      "averageRate": "Average Daily Rate",
+      "revpar": "RevPAR"
+    }
+  },
+  "financial": {
+    "title": "Financial",
+    "transactions": "Transactions",
+    "addTransaction": "Add Transaction",
+    "amount": "Amount",
+    "type": "Type",
+    "paymentMethod": "Payment Method",
+    "reference": "Reference",
+    "description": "Description",
+    "types": {
+      "payment": "Payment",
+      "refund": "Refund",
+      "adjustment": "Adjustment"
+    },
+    "methods": {
+      "cash": "Cash",
+      "creditCard": "Credit Card",
+      "debitCard": "Debit Card",
+      "bankTransfer": "Bank Transfer",
+      "pix": "PIX"
+    },
+    "status": {
+      "pending": "Pending",
+      "partial": "Partial",
+      "paid": "Paid",
+      "refunded": "Refunded",
+      "cancelled": "Cancelled"
+    }
+  },
+  "users": {
+    "title": "Users",
+    "list": "User List",
+    "add": "Add User",
+    "edit": "Edit User",
+    "role": "Role",
+    "hotel": "Hotel",
+    "lastLogin": "Last Login",
+    "roles": {
+      "superAdmin": "Super Admin",
+      "hotelAdmin": "Hotel Admin",
+      "manager": "Manager",
+      "receptionist": "Receptionist",
+      "staff": "Staff"
+    }
+  },
+  "hotels": {
+    "title": "Hotels",
+    "list": "Hotel List",
+    "add": "Add Hotel",
+    "edit": "Edit Hotel",
+    "name": "Hotel Name",
+    "code": "Hotel Code",
+    "address": "Address",
+    "city": "City",
+    "state": "State",
+    "country": "Country",
+    "zipCode": "ZIP Code",
+    "phone": "Phone",
+    "email": "Email",
+    "description": "Description"
+  },
+  "settings": {
+    "title": "Settings",
+    "general": "General",
+    "appearance": "Appearance",
+    "language": "Language",
+    "theme": "Theme",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "system": "System"
+  },
+  "profile": {
+    "title": "Profile",
+    "subtitle": "Manage your personal information and account settings",
+    "personalInfo": "Personal Information",
+    "personalInfoDesc": "Update your personal details and contact information",
+    "changePassword": "Change Password",
+    "changePasswordDesc": "Update your account password for security",
+    "accountInfo": "Account Information",
+    "accountInfoDesc": "Your account details and permissions",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "updatePassword": "Update Password",
+    "passwordRequirements": "Password must be at least 6 characters long",
+    "passwordsMatch": "Passwords match",
+    "currentPasswordRequired": "Current password is required",
+    "newPasswordRequired": "New password is required",
+    "passwordMinLength": "Password must be at least 6 characters",
+    "updateSuccess": "Profile updated successfully",
+    "updateError": "Failed to update profile",
+    "passwordChangeSuccess": "Password changed successfully",
+    "passwordChangeError": "Failed to change password",
+    "emailCannotChange": "Email cannot be changed",
+    "allHotels": "All Hotels (Super Admin)",
+    "memberSince": "Member Since",
+    "member": "Active Member",
+    "active": "Active",
+    "accountId": "Account ID"
+  },
+  "errors": {
+    "generic": "Something went wrong",
+    "notFound": "Not found",
+    "unauthorized": "Unauthorized",
+    "forbidden": "Forbidden",
+    "validation": "Validation error",
+    "network": "Network error"
+  },
+  "validation": {
+    "required": "This field is required",
+    "email": "Please enter a valid email",
+    "minLength": "Must be at least {min} characters",
+    "maxLength": "Must be at most {max} characters",
+    "positive": "Must be a positive number",
+    "date": "Please enter a valid date"
+  }
+}
