@@ -23,8 +23,8 @@ import {
   LogOut,
   Settings,
   LayoutDashboard,
-  Hotel,
 } from 'lucide-react'
+import { Logo } from '@/components/ui/logo'
 import { useState } from 'react'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 
@@ -52,11 +52,8 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <Hotel className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold gradient-text">
-              {t('common.appName')}
-            </span>
+          <Link href="/">
+            <Logo size="md" />
           </Link>
 
           {/* Desktop Navigation */}

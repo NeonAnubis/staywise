@@ -16,13 +16,13 @@ import {
   FileText,
   DollarSign,
   Settings,
-  Hotel,
   Building2,
   UserCog,
   ChevronLeft,
   ChevronRight,
 } from 'lucide-react'
 import { useState } from 'react'
+import { Logo, LogoIcon } from '@/components/ui/logo'
 
 interface SidebarProps {
   className?: string
@@ -102,19 +102,13 @@ export function Sidebar({ className }: SidebarProps) {
     >
       {/* Logo */}
       <div className="flex h-16 items-center justify-between px-4 border-b">
-        {!collapsed && (
-          <Link href="/dashboard" className="flex items-center space-x-2">
-            <Hotel className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold gradient-text">
-              {t('common.appName')}
-            </span>
-          </Link>
-        )}
-        {collapsed && (
-          <Link href="/dashboard">
-            <Hotel className="h-8 w-8 text-primary mx-auto" />
-          </Link>
-        )}
+        <Link href="/dashboard" className="flex items-center">
+          {collapsed ? (
+            <LogoIcon size={32} className="mx-auto" />
+          ) : (
+            <Logo size="md" />
+          )}
+        </Link>
       </div>
 
       {/* Navigation */}

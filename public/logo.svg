@@ -1,0 +1,21 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background shape - rounded square -->
+  <rect x="4" y="4" width="40" height="40" rx="10" fill="#6366f1"/>
+
+  <!-- Building silhouette -->
+  <path d="M14 36V18C14 16.8954 14.8954 16 16 16H22C23.1046 16 24 16.8954 24 18V36" fill="#4f46e5" opacity="0.3"/>
+  <path d="M24 36V14C24 12.8954 24.8954 12 26 12H32C33.1046 12 34 12.8954 34 14V36" fill="#4f46e5" opacity="0.5"/>
+
+  <!-- Stylized S shape -->
+  <path d="M28 16C28 16 32 16 32 20C32 24 24 24 24 28C24 32 28 32 28 32" stroke="white" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- Windows -->
+  <rect x="16" y="20" width="4" height="4" rx="0.5" fill="white" opacity="0.8"/>
+  <rect x="16" y="26" width="4" height="4" rx="0.5" fill="white" opacity="0.8"/>
+
+  <!-- Door -->
+  <rect x="17" y="32" width="4" height="4" rx="0.5" fill="white"/>
+
+  <!-- Roof accent -->
+  <path d="M24 12L28 8L32 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.6"/>
+</svg>
